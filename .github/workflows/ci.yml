@@ -23,7 +23,7 @@ jobs:
         run: |
           python gerar_relatorio.py
           python gerar_grafico.py
-          # Renomeia os arquivos com o hash do commit para evitar conflitos
+        # Renomeia os arquivos com o hash do commit para evitar conflitos
           mv relatorio.html relatorio-${{ github.sha }}.html
           mv grafico.png grafico-${{ github.sha }}.png # Renomeia com o hash do commit  
 
